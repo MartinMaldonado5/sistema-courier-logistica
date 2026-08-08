@@ -15,7 +15,7 @@ export const ShippingCalculator: React.FC = () => {
   const [category, setCategory] = useState<ProductCategory>('tech');
   const [declaredValueUsd, setDeclaredValueUsd] = useState<number>(140);
   const [includeInsurance, setIncludeInsurance] = useState<boolean>(true);
-  const [includeBuyForMe, setIncludeBuyForMe] = useState<boolean>(false);
+  const [includeAdvisory, setIncludeAdvisory] = useState<boolean>(true);
 
   // Conversion calculations
   const actualWeightKg = weightUnit === 'lb' ? weightKg * 0.453592 : weightKg;
@@ -31,14 +31,11 @@ export const ShippingCalculator: React.FC = () => {
   // Insurance Logic (1.5% of value, min $3 USD)
   const insuranceUsd = includeInsurance ? Math.max(3, declaredValueUsd * 0.015) : 0;
 
-  // Buy for me commission (5%, min $5 USD)
-  const buyForMeUsd = includeBuyForMe ? Math.max(5, declaredValueUsd * 0.05) : 0;
-
   // Selected Department Info
   const deptInfo = PERU_DEPARTMENTS.find((d) => d.id === selectedDeptId) || PERU_DEPARTMENTS[0];
 
   // Total Estimated Cost
-  const totalUsd = baseShippingUsd + estimatedSunatTaxesUsd + insuranceUsd + buyForMeUsd;
+  const totalUsd = baseShippingUsd + estimatedSunatTaxesUsd + insuranceUsd;
   const exchangeRatePen = 3.75;
   const totalPen = totalUsd * exchangeRatePen;
 
@@ -56,7 +53,7 @@ export const ShippingCalculator: React.FC = () => {
       `🏷️ Categoría: ${category.toUpperCase()}\n` +
       `💵 Valor Declarado: $${declaredValueUsd} USD\n` +
       `🛡️ Seguro de Carga: ${includeInsurance ? 'Sí' : 'No'}\n` +
-      `🛍️ Compramos por Ti: ${includeBuyForMe ? 'Sí' : 'No'}\n` +
+      `🤝 Asesoría de Compra 1 a 1: ${includeAdvisory ? 'Solicitada (GRATIS)' : 'No'}\n` +
       `---------------------------\n` +
       `💰 Costo Total Estimado: $${totalUsd.toFixed(2)} USD (S/ ${totalPen.toFixed(2)})`;
 
@@ -192,13 +189,15 @@ export const ShippingCalculator: React.FC = () => {
               <label className="flex items-center gap-3 p-3.5 bg-gray-50 border border-gray-200 rounded-xl cursor-pointer hover:border-gray-300 transition-colors">
                 <input
                   type="checkbox"
-                  checked={includeBuyForMe}
-                  onChange={(e) => setIncludeBuyForMe(e.target.checked)}
+                  checked={includeAdvisory}
+                  onChange={(e) => setIncludeAdvisory(e.target.checked)}
                   className="w-4 h-4 accent-brand-red rounded"
                 />
                 <div className="text-xs">
-                  <span className="font-bold text-gray-900 block">Servicio "Compramos por Ti" (5%)</span>
-                  <span className="text-gray-500">Compramos directamente en EE.UU. si rechazan tu tarjeta.</span>
+                  <span className="font-bold text-gray-900 block flex items-center gap-1.5">
+                    Asesoría & Guía de Compra 1 a 1 <span className="text-emerald-600 font-extrabold uppercase bg-emerald-100 px-2 py-0.5 rounded text-[10px]">100% GRATIS</span>
+                  </span>
+                  <span className="text-gray-500">Te enseñamos y guiamos por WhatsApp para comprar con tu tarjeta directamente.</span>
                 </div>
               </label>
             </div>
@@ -236,12 +235,12 @@ export const ShippingCalculator: React.FC = () => {
                 </span>
               </div>
 
-              {includeBuyForMe && (
-                <div className="flex items-center justify-between text-gray-500">
-                  <span>Comisión "Compramos por Ti":</span>
-                  <span className="font-bold text-amber-600 tabular-nums">${buyForMeUsd.toFixed(2)} USD</span>
-                </div>
-              )}
+              <div className="flex items-center justify-between text-gray-500">
+                <span>Asesoría de Compra 1 a 1:</span>
+                <span className="font-bold text-emerald-600 tabular-nums">
+                  {includeAdvisory ? '$0.00 USD (Incluida)' : 'No requerida'}
+                </span>
+              </div>
 
               <div className="flex items-center justify-between text-gray-500">
                 <span>Delivery en Perú ({deptInfo.name}):</span>

@@ -32,8 +32,8 @@ export const AIAssistantWidget: React.FC = () => {
         botResponse = '🚫 Están prohibidos: armas, municiones, drogas, perecibles y dinero. Suplementos y celulares requieren permiso (el permiso MTC para celulares lo tramitamos GRATIS).';
       } else if (textLower.includes('miami') || textLower.includes('direccion') || textLower.includes('casillero')) {
         botResponse = ' Tu dirección de Casillero en Miami es: 8300 NW 30th Terrace, Ste 400, (Tu Código AB-XXXX), Doral, FL 33122.';
-      } else if (textLower.includes('comprar') || textLower.includes('tarjeta') || textLower.includes('rechaz')) {
-        botResponse = '🛍️ Con nuestro servicio "Compramos por Ti", nosotros realizamos la compra en EE.UU. directamente por ti con una comisión fija del 5%.';
+      } else if (textLower.includes('comprar') || textLower.includes('tarjeta') || textLower.includes('rechaz') || textLower.includes('asesor')) {
+        botResponse = '🤝 Te brindamos Asesoría y Guía de Compra 1 a 1 totalmente GRATIS por WhatsApp para enseñarte a comprar en tiendas de EE.UU., colocar tu casillero y resolver dudas.';
       }
 
       setMessages((prev) => [...prev, { role: 'assistant', text: botResponse }]);

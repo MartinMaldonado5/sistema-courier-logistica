@@ -62,13 +62,13 @@ export const FAQS: FAQItem[] = [
   { id: 'f11', category: 'shipping', question: '¿Puedo almacenar mis compras en Miami mientras espero otras tiendas?', answer: 'Sí, ofrecemos hasta 30 días de almacenamiento 100% GRATUITO en nuestro warehouse de Miami para que puedas juntar todas tus compras sin prisa.' },
   { id: 'f12', category: 'shipping', question: '¿Tienen cobertura de entrega en todo el Perú?', answer: 'Llegamos al 100% de ciudades y provincias del Perú (Arequipa, Trujillo, Cusco, Piura, Chiclayo, Huancayo, Iquitos, Tarapoto, Tacna, etc.).' },
 
-  // COMPRAMOS POR TI (6)
-  { id: 'f13', category: 'buyforme', question: '¿En qué consiste el servicio "Compramos por Ti"?', answer: 'Si no cuentas con tarjeta de crédito internacional o si una tienda de EE.UU. rechaza tarjetas peruanas (como Nike USA o Sephora), nuestro equipo de Miami realiza la compra directamente por ti.' },
-  { id: 'f14', category: 'buyforme', question: '¿Cuánto cobran por el servicio de compra asistida?', answer: 'La comisión es de apenas un 5% sobre el valor del producto (mínimo $5 USD). Incluye verificación de vendedor seguro y gestión del pedido.' },
-  { id: 'f15', category: 'buyforme', question: '¿Cómo solicito una compra asistida?', answer: 'Solo ingresas al formulario o nos envías el enlace del producto deseado vía WhatsApp. Te enviamos una cotización exacta en soles o dólares y al confirmar realizamos la compra de inmediato.' },
-  { id: 'f16', category: 'buyforme', question: '¿Pueden comprar ofertas relámpago en Amazon Prime Day o Black Friday?', answer: '¡Absolutamente! Nuestro equipo monitorea las ofertas en tiempo real para asegurar el stock antes de que se agoten las promociones en EE.UU.' },
-  { id: 'f17', category: 'buyforme', question: '¿Pueden pujar por subastas en eBay?', answer: 'Sí, podemos participar en subastas de eBay bajo tu límite de presupuesto especificado para ganar el artículo al mejor precio.' },
-  { id: 'f18', category: 'buyforme', question: '¿Qué garantía tengo si el producto comprado llega dañado o no es el correcto?', answer: 'Verificamos visualmente el estado del producto al llegar a Miami. Si la tienda envió un item incorrecto o defectuoso, gestionamos la devolución gratuita directamente con el vendedor en EE.UU.' },
+  // ASESORÍA Y GUÍA DE COMPRA (6)
+  { id: 'f13', category: 'buyforme', question: '¿En qué consiste el servicio de "Asesoría y Guía de Compra"?', answer: 'Te guiamos paso a paso por WhatsApp o llamada para realizar tu compra directamente desde tu cuenta o tarjeta en tiendas como Amazon, Apple o Nike USA, enseñándote a colocar correctamente la dirección de tu casillero en Miami.' },
+  { id: 'f14', category: 'buyforme', question: '¿Cuánto cuesta la Asesoría de Compra?', answer: '¡Es 100% GRATUITA! AEROBOX PRO no cobra ninguna comisión por ayudarte a realizar tu compra. Tú realizas el pago directamente a la tienda oficial de EE.UU.' },
+  { id: 'f15', category: 'buyforme', question: '¿Cómo solicito asesoría para mi primera compra?', answer: 'Solo ingresas al botón "Solicitar Asesoría" o nos envías el enlace del producto deseado vía WhatsApp. Un asesor te indicará exactamente cómo ingresar los datos de envío y facturación.' },
+  { id: 'f16', category: 'buyforme', question: '¿Me orientan durante eventos como Amazon Prime Day o Black Friday?', answer: '¡Absolutamente! Nuestro equipo te indica qué ofertas valen la pena, cómo aplicar cupones de descuento y cómo asegurar el stock antes de que se agoten las promociones.' },
+  { id: 'f17', category: 'buyforme', question: '¿Me ayudan si una tienda rechaza mi tarjeta o dirección?', answer: 'Sí, te brindamos alternativas seguras e instrucciones exactas para configurar tu tarjeta o métodos como PayPal para que la tienda procese tu pedido sin problemas.' },
+  { id: 'f18', category: 'buyforme', question: '¿Qué garantía tengo si la tienda envía un producto incorrecto?', answer: 'Verificamos visualmente el estado del paquete al llegar a Miami. Si la tienda envió un producto defectuoso o equivocado, te asesoramos y ayudamos a gestionar la devolución gratuita con el vendedor en EE.UU.' },
 
   // ADUANAS SUNAT Y RESTRICCIONES (6)
   { id: 'f19', category: 'customs', question: '¿Hasta qué monto puedo importar sin pagar impuestos en Perú?', answer: 'Puedes importar hasta $200.00 USD por envío (valor FOB de la mercadería) totalmente libre de impuestos aduaneros (Arancel 0% e IGV 0%).' },
@@ -120,7 +120,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     date: 'Hace 1 semana',
     store: 'Nike USA & eBay',
-    comment: 'Nike USA rechazaba mi tarjeta peruana. Usé el servicio "Compramos por Ti" de AEROBOX. Compraron las zapatillas en Miami en 20 minutos y las enviaron a Trujillo sin ningún contratiempo.',
+    comment: 'Tenía dudas sobre cómo ingresar la dirección de Miami en Nike USA. El equipo de AEROBOX me asesoró paso a paso por WhatsApp de forma gratuita. Compré mis zapatillas y llegaron a Trujillo súper rápido.',
     savedAmount: 'Ahorro: S/ 450',
     verified: true
   },

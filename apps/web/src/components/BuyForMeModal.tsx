@@ -44,13 +44,13 @@ export const BuyForMeModal: React.FC<BuyForMeModalProps> = ({ isOpen, onClose })
 
         <div className="space-y-2">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold border border-blue-200">
-            <HelpCircle className="w-4 h-4" /> Asesoría Gratuita 1 a 1
+            <HelpCircle className="w-4 h-4" /> Asesoría & Guía de Compra Gratuita
           </div>
           <h2 className="text-xl sm:text-2xl font-black text-slate-900">
-            Te Asesoramos en tu Compra en USA
+            Te Asesoramos e Indicamos Cómo Comprar en EE.UU.
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 font-medium">
-            ¿Tienes dudas con tu cuenta, dirección de casillero o tarjeta? Te guiamos paso a paso por WhatsApp.
+            Te acompañamos paso a paso por WhatsApp para que compres directamente en la tienda con tu tarjeta y tu casillero.
           </p>
         </div>
 
@@ -58,10 +58,10 @@ export const BuyForMeModal: React.FC<BuyForMeModalProps> = ({ isOpen, onClose })
         <div className="p-4 bg-blue-50 rounded-2xl border border-blue-200 text-xs text-blue-950 space-y-1.5">
           <div className="flex items-center gap-2 font-extrabold text-blue-900">
             <ShieldCheck className="w-4 h-4 text-blue-600 shrink-0" />
-            <span>Gestión Logística AEROBOX PRO</span>
+            <span>Modelo de Servicio AEROBOX PRO</span>
           </div>
           <p className="leading-relaxed font-medium">
-            Realizas tu compra en cualquier plataforma, página o tienda de EE.UU. y colocas la dirección de nuestro casillero / warehouse en Miami. Nosotros realizamos toda la gestión logística desde la recepción en Miami hasta traerlo a Lima / provincias y entregártelo en la puerta de tu casa. Te brindamos <strong>asesoría 1 a 1 totalmente GRATIS</strong> si deseas ayuda en el proceso.
+            Tú realizas la compra directamente en tu tienda favorita de EE.UU. usando la dirección de nuestro almacén en Miami. <strong>No realizamos compras a nombre del cliente ni cobramos comisiones de compra</strong>: te guiamos y asesoramos totalmente <strong>GRATIS</strong> para ingresar la dirección, seleccionar el mejor tipo de envío y resolver cualquier duda durante la compra.
           </p>
         </div>
 

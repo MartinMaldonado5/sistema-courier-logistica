@@ -8,17 +8,10 @@ interface Hero3DProps {
   onOpenCalculator: () => void;
   onOpenTracking: () => void;
   onOpenQuote: () => void;
+  onOpenMiamiAddress: () => void;
 }
 
-export const Hero3D: React.FC<Hero3DProps> = ({ onOpenCalculator, onOpenTracking, onOpenQuote }) => {
-  const [copiedAddress, setCopiedAddress] = useState(false);
-
-  const copyAddress = () => {
-    navigator.clipboard.writeText('8300 NW 30th Terrace, Ste 400, AB-9042, Doral, FL 33122');
-    setCopiedAddress(true);
-    setTimeout(() => setCopiedAddress(false), 3000);
-  };
-
+export const Hero3D: React.FC<Hero3DProps> = ({ onOpenCalculator, onOpenTracking, onOpenQuote, onOpenMiamiAddress }) => {
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center pt-32 pb-20 overflow-hidden bg-slate-900">
       
@@ -50,8 +43,8 @@ export const Hero3D: React.FC<Hero3DProps> = ({ onOpenCalculator, onOpenTracking
             transition={{ duration: 0.5 }}
             className="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2"
           >
-            <span className="text-xs font-bold text-blue-300 bg-blue-500/20 border border-blue-400/30 backdrop-blur-md px-4 py-1.5 rounded-full shadow-sm">
-              ✈️ $8.00 USD / KG — Tarifa Plana Sin Costos Ocultos
+            <span className="text-xs font-extrabold text-blue-300 bg-blue-500/20 border border-blue-400/30 backdrop-blur-md px-4 py-1.5 rounded-full shadow-sm">
+              ✈️ Tarifa Plana $8.00 USD / KG • Sin Registro ni Trámites
             </span>
           </motion.div>
 
@@ -61,7 +54,7 @@ export const Hero3D: React.FC<Hero3DProps> = ({ onOpenCalculator, onOpenTracking
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1] drop-shadow-md"
           >
-            Traemos tus compras desde <span className="text-blue-400 bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent">Estados Unidos</span> hasta tu casa.
+            Traemos tus compras de <span className="text-blue-400 bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent">EE.UU. a Perú</span> a la puerta de tu casa.
           </motion.h1>
 
           <motion.p 
@@ -70,7 +63,7 @@ export const Hero3D: React.FC<Hero3DProps> = ({ onOpenCalculator, onOpenTracking
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium drop-shadow"
           >
-            Realizas tu compra en cualquier tienda de EE.UU., colocas nuestro casillero de Miami y nosotros hacemos toda la gestión hasta entregarlo en la puerta de tu casa.
+            Compras en tu tienda preferida de Estados Unidos (Amazon, Apple, Nike), colocas la dirección de nuestro almacén en Miami y nosotros nos encargamos de todo el transporte hasta tu domicilio.
           </motion.p>
 
           <motion.div 
@@ -89,7 +82,7 @@ export const Hero3D: React.FC<Hero3DProps> = ({ onOpenCalculator, onOpenTracking
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>Compramos por Ti</span>
+              <span>Asesoría de Compra Gratis</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -97,7 +90,7 @@ export const Hero3D: React.FC<Hero3DProps> = ({ onOpenCalculator, onOpenTracking
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>Asesoría SUNAT ($200 USD)</span>
+              <span>0% Impuestos (&lt; $200 USD)</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -112,24 +105,24 @@ export const Hero3D: React.FC<Hero3DProps> = ({ onOpenCalculator, onOpenTracking
             className="flex flex-col sm:flex-row items-center gap-4 pt-2 justify-center lg:justify-start"
           >
             <button 
-              onClick={onOpenCalculator}
-              className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold text-base rounded-xl transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center gap-3 hover:scale-102 active:scale-95"
+              onClick={onOpenMiamiAddress}
+              className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-black text-base rounded-xl transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2.5 hover:scale-102 active:scale-95"
             >
-              <Calculator className="w-5 h-5" />
-              Cotizar mi Envío Ahora
+              <MapPin className="w-5 h-5 text-blue-300" />
+              Ver Dirección en USA Gratis
               <ArrowRight className="w-5 h-5" />
             </button>
 
             <button 
-              onClick={onOpenTracking}
-              className="w-full sm:w-auto px-7 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 font-semibold text-base rounded-xl transition-all flex items-center justify-center gap-2.5 shadow-md"
+              onClick={onOpenCalculator}
+              className="w-full sm:w-auto px-7 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 font-bold text-base rounded-xl transition-all flex items-center justify-center gap-2 shadow-md"
             >
-              <Package className="w-5 h-5" />
-              Rastrear Paquete
+              <Calculator className="w-5 h-5" />
+              Calcular Envío
             </button>
 
             <a
-              href="https://wa.me/51987654321?text=Hola%20AEROBOX%20PRO,%20quiero%20cotizar%20un%20env%C3%ADo%20desde%20EE.UU."
+              href="https://wa.me/51987654321?text=Hola%20AEROBOX%20PRO,%20quiero%20informaci%C3%B3n%20para%20usar%20su%20direcci%C3%B3n%20en%20Miami"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-6 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-base rounded-xl transition-all shadow-lg shadow-emerald-900/30 flex items-center justify-center gap-2 hover:scale-102 active:scale-95"

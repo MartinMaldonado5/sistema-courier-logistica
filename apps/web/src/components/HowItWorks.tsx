@@ -1,42 +1,36 @@
 'use client';
 
 import React from 'react';
-import { ShoppingCart, Layers, Plane, Home, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
+import { ShoppingCart, Layers, Plane, Home, ArrowRight, ShieldCheck, Sparkles, MapPin } from 'lucide-react';
 
 interface HowItWorksProps {
   onOpenCalculator: () => void;
   onOpenBuyForMe: () => void;
+  onOpenMiamiAddress: () => void;
 }
 
-export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenCalculator, onOpenBuyForMe }) => {
+export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenCalculator, onOpenBuyForMe, onOpenMiamiAddress }) => {
   const steps = [
     {
       num: '1',
-      title: 'Compras en Tiendas de EE.UU.',
-      desc: 'Realizas tu compra en cualquier tienda de EE.UU. y colocas la dirección de nuestro Casillero Warehouse en Miami.',
-      icon: ShoppingCart,
+      title: 'Copias nuestra Dirección en USA',
+      desc: 'Al comprar en cualquier tienda de EE.UU. colocas la dirección de nuestro almacén en Miami (Doral, FL) y en el nombre ingresas AEROBOX + Tu Nombre y Apellido.',
+      icon: MapPin,
       badge: 'Paso 1'
     },
     {
       num: '2',
-      title: 'Recepción en Miami & Consolidación Opcional',
-      desc: 'Recibimos tu paquete en Miami y lo fotografiamos. Si lo solicitas, consolidamos gratis varios paquetes en 1 sola caja para ahorrar peso.',
-      icon: Layers,
+      title: 'Realizas tu Compra en la Tienda',
+      desc: 'Compras directamente en Amazon, Apple, Nike, eBay u otra tienda. Si tienes dudas o problemas con tu tarjeta, te asesoramos totalmente GRATIS por WhatsApp.',
+      icon: ShoppingCart,
       badge: 'Paso 2'
     },
     {
       num: '3',
-      title: 'Vuelo Exprés & Despacho SUNAT',
-      desc: 'Vuelo aéreo directo a Lima (48-72h). Gestionamos SUNAT (sin impuestos si tu compra es menor a $200.00 USD).',
-      icon: Plane,
-      badge: 'Paso 3'
-    },
-    {
-      num: '4',
-      title: 'Entrega en tu Casa o Provincias',
-      desc: 'Recibes en la puerta de tu domicilio en Lima (Delivery GRATIS) o despachamos a provincias vía Shalom, Olva, Marvisur o la agencia de transporte que elijas.',
+      title: 'Recibes en la Puerta de tu Casa en Perú',
+      desc: 'Tu paquete llega a nuestro almacén de Miami, viaja en vuelo exprés a Lima y te lo entregamos en tu casa por solo $8.00 USD/kg (Delivery Gratis en Lima y envíos a Provincias).',
       icon: Home,
-      badge: 'Paso 4'
+      badge: 'Paso 3'
     }
   ];
 
@@ -92,21 +86,21 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenCalculator, onOpen
         </div>
 
         {/* Action Buttons Row */}
-        <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center gap-3">
+        <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
           <button
-            onClick={onOpenCalculator}
-            className="w-full sm:flex-1 py-3 px-5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm rounded-xl transition-all shadow-md shadow-blue-600/20 flex items-center justify-center gap-2"
+            onClick={onOpenMiamiAddress}
+            className="w-full sm:w-auto py-3.5 px-6 bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-xs sm:text-sm rounded-xl transition-all shadow-md shadow-blue-600/20 flex items-center justify-center gap-2"
           >
-            <span>Cotizar mi Envío Ahora</span>
+            <MapPin className="w-4 h-4 text-blue-200" />
+            <span>Ver Dirección para Mi Compra en USA</span>
             <ArrowRight className="w-4 h-4" />
           </button>
 
           <button
-            onClick={onOpenBuyForMe}
-            className="w-full sm:w-auto py-3 px-5 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-xs sm:text-sm rounded-xl transition-all flex items-center justify-center gap-2"
+            onClick={onOpenCalculator}
+            className="w-full sm:w-auto py-3.5 px-6 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-xs sm:text-sm rounded-xl transition-all flex items-center justify-center gap-2"
           >
-            <Sparkles className="w-4 h-4 text-blue-600" />
-            <span>¿Necesitas Asesoría de Compra?</span>
+            <span>Calcular Envío ($8/kg)</span>
           </button>
         </div>
 
