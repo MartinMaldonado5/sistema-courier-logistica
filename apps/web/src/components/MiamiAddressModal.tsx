@@ -15,7 +15,7 @@ export const MiamiAddressModal: React.FC<MiamiAddressModalProps> = ({ isOpen, on
 
   if (!isOpen) return null;
 
-  const displayName = userFullName.trim() ? `AEROBOX + ${userFullName.trim().toUpperCase()}` : 'AEROBOX + TU NOMBRE Y APELLIDO';
+  const displayName = userFullName.trim() ? `FUTURE COURIER + ${userFullName.trim().toUpperCase()}` : 'FUTURE COURIER + TU NOMBRE Y APELLIDO';
 
   const addressFields = [
     { key: 'name', label: 'NOMBRE / NAME', value: displayName },

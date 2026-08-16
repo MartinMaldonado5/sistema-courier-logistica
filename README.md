@@ -1,4 +1,4 @@
-# 📦 Aerobox Pro - Courier & Logistics Monorepo System
+# 📦 Future Courier - Courier & Logistics Monorepo System
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.0-black?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
@@ -6,7 +6,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-**Aerobox Pro** (PROYECTO-COURRIER) es una plataforma monorepo moderna e integral para la gestión de envíos internacionales, seguimiento de paquetes, casilleros virtuales y logística courier expreso.
+**Future Courier** es una plataforma monorepo moderna e integral para la gestión de envíos internacionales, seguimiento de paquetes, casilleros virtuales y logística courier expreso.
 
 ---
 

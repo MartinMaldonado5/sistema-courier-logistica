@@ -53,7 +53,7 @@ export const PageSkeleton: React.FC = () => {
       <div className="container mx-auto text-center py-2 flex items-center justify-center gap-2">
         <span className="w-2 h-2 rounded-full bg-blue-500 animate-ping" />
         <span className="text-xs font-mono font-bold text-slate-400 tracking-widest uppercase">
-          Cargando AEROBOX PRO...
+          Cargando Future Courier...
         </span>
       </div>
     </motion.div>

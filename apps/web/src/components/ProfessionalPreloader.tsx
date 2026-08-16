@@ -60,7 +60,7 @@ export const ProfessionalPreloader: React.FC<ProfessionalPreloaderProps> = ({ on
         {/* Nombre de la Marca Principal */}
         <div className="space-y-2">
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white uppercase font-sans">
-            AEROBOX <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">PRO</span>
+            FUTURE <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">COURIER</span>
           </h1>
           <p className="text-xs sm:text-sm font-bold tracking-[0.25em] uppercase text-slate-400">
             Courier & Casillero Internacional

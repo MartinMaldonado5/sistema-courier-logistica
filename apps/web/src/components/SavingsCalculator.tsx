@@ -13,10 +13,10 @@ export const SavingsCalculator: React.FC = () => {
   // Competencia: $10 USD / kg + $15 gasto administrativo + cobros extras
   const traditionalCost = totalKgYear * 10 + shipmentsPerYear * 15;
 
-  // AEROBOX PRO: $8 USD / kg flat + $0 handling + $0 consolidation
-  const aeroboxCost = totalKgYear * 8;
+  // Future Courier: $8 USD / kg flat + $0 handling + $0 consolidation
+  const futureCourierCost = totalKgYear * 8;
 
-  const totalSavingsUsd = traditionalCost - aeroboxCost;
+  const totalSavingsUsd = traditionalCost - futureCourierCost;
   const percentageSaved = Math.round((totalSavingsUsd / traditionalCost) * 100);
 
   return (
@@ -28,7 +28,7 @@ export const SavingsCalculator: React.FC = () => {
             Calculadora de Ahorro
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight">
-            ¿Cuánto dinero ahorras con <span className="text-brand-red">AEROBOX PRO</span>?
+            ¿Cuánto dinero ahorras con <span className="text-brand-red">Future Courier</span>?
           </h2>
           <p className="text-base sm:text-lg text-gray-500">
             Compara nuestras tarifas planas de <strong className="text-gray-900">$8.00/kg</strong> frente a los couriers tradicionales.
@@ -100,9 +100,9 @@ export const SavingsCalculator: React.FC = () => {
                 </div>
 
                 <div className="p-5 bg-gray-100 rounded-xl border border-brand-red/40 text-center space-y-2">
-                  <span className="text-xs font-bold text-brand-red uppercase block">AEROBOX PRO</span>
+                  <span className="text-xs font-bold text-brand-red uppercase block">Future Courier</span>
                   <div className="text-3xl font-bold text-gray-900 tabular-nums">
-                    ${aeroboxCost.toLocaleString()} USD
+                    ${futureCourierCost.toLocaleString()} USD
                   </div>
                   <span className="text-[11px] text-emerald-700 font-bold block">$8/kg Tarifa Plana</span>
                 </div>

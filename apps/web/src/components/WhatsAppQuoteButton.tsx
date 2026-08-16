@@ -27,7 +27,7 @@ export const WhatsAppQuoteButton: React.FC<WhatsAppQuoteButtonProps> = ({
   const calculatedLb = weightLb || Math.round(weightKg * 2.20462 * 10) / 10;
   const shippingCost = estimatedTotalUsd || Math.round(weightKg * 8 * 100) / 100;
 
-  const message = `👋 ¡Hola Aerobox Pro! Deseo cotizar mi envío desde EE.UU.:\n\n` +
+  const message = `👋 ¡Hola Future Courier! Deseo cotizar mi envío desde EE.UU.:\n\n` +
     `📦 *Peso Estimado*: ${weightKg} kg (${calculatedLb} lbs)\n` +
     `💵 *Valor del Producto*: $${productValueUsd} USD\n` +
     `✈️ *Costo Estimado de Envío*: $${shippingCost} USD\n` +

@@ -75,7 +75,7 @@ export const Testimonials: React.FC = () => {
             Lo que dicen nuestros Clientes
           </h2>
           <p className="text-base sm:text-lg text-gray-500">
-            Más de 5,000 importadores confían en AEROBOX PRO.
+            Más de 5,000 importadores confían en Future Courier.
           </p>
         </div>
 

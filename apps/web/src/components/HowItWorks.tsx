@@ -14,7 +14,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenCalculator, onOpen
     {
       num: '1',
       title: 'Copias nuestra Dirección en USA',
-      desc: 'Al comprar en cualquier tienda de EE.UU. colocas la dirección de nuestro almacén en Miami (Doral, FL) y en el nombre ingresas AEROBOX + Tu Nombre y Apellido.',
+      desc: 'Al comprar en cualquier tienda de EE.UU. colocas la dirección de nuestro almacén en Miami (Doral, FL) y en el nombre ingresas FUTURE COURIER + Tu Nombre y Apellido.',
       icon: MapPin,
       badge: 'Paso 1'
     },
@@ -44,7 +44,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenCalculator, onOpen
             Proceso Simple y Transparente
           </span>
           <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-            ¿Cómo funciona <span className="text-blue-600">AEROBOX PRO</span>?
+            ¿Cómo funciona <span className="text-blue-600">Future Courier</span>?
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 font-medium">
             Traer tus compras desde EE.UU. a Perú es rápido y seguro en 4 pasos concretos.

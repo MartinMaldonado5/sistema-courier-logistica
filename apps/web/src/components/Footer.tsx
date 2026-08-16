@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
               </div>
               <div>
                 <span className="text-xl font-extrabold text-white tracking-wider">
-                  AEROBOX <span className="text-blue-500">PRO</span>
+                  FUTURE <span className="text-blue-500">COURIER</span>
                 </span>
                 <span className="block text-[9px] font-bold text-slate-400 tracking-widest uppercase">
                   Courier USA → Perú
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
               <li><a href="#tiendas" className="hover:text-white transition-colors">Cómo comprar en USA</a></li>
               <li><a href="#calculadora" className="hover:text-white transition-colors">Dirección de USA</a></li>
               <li><a href="#consolidacion" className="hover:text-white transition-colors">Importa desde China</a></li>
-              <li><a href="#ahorro" className="hover:text-white transition-colors">AeroPuntos</a></li>
+              <li><a href="#ahorro" className="hover:text-white transition-colors">FuturePuntos</a></li>
               <li><a href="#faq" className="hover:text-white transition-colors">FAQ</a></li>
             </ul>
           </div>
@@ -127,15 +127,15 @@ export const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-emerald-400 shrink-0" />
-                <a href="mailto:contacto@aeroboxpro.pe" className="hover:text-white transition-colors">
-                  contacto@aeroboxpro.pe
+                <a href="mailto:contacto@futurecourier.pe" className="hover:text-white transition-colors">
+                  contacto@futurecourier.pe
                 </a>
               </li>
             </ul>
 
             {/* Prominent Green WhatsApp CTA Button */}
             <a
-              href="https://wa.me/51987654321?text=Hola%20AEROBOX%20PRO,%20quisiera%20cotizar%20un%20env%C3%ADo."
+              href="https://wa.me/51987654321?text=Hola%20Future%20Courier,%20quisiera%20cotizar%20un%20env%C3%ADo."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 w-full py-3 px-5 bg-[#10b981] hover:bg-[#059669] text-white font-bold text-xs rounded-xl shadow-lg shadow-emerald-900/30 transition-all duration-300 hover:scale-[1.02] active:scale-95"
@@ -149,9 +149,9 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar: Copyright & Credits */}
         <div className="pt-8 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
-          <p>© 2026 Aerobox Pro. Todos los derechos reservados.</p>
+          <p>© 2026 Future Courier. Todos los derechos reservados.</p>
           <p>
-            Desarrollado y diseñado por <strong className="text-slate-200">Aerobox Pro Team</strong>.
+            Desarrollado y diseñado por <strong className="text-slate-200">Future Courier Team</strong>.
           </p>
         </div>
 

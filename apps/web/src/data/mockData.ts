@@ -1,8 +1,8 @@
 import { FAQItem, DepartmentInfo, StoreItem, Testimonial, BlogPost, TrackingRecord } from '../types';
 
 export const PERU_DEPARTMENTS: DepartmentInfo[] = [
-  { id: 'lima', name: 'Lima Metropolitana', deliveryDays: '24 hrs', partner: 'Delivery Propio AEROBOX (GRATIS)', isFreeLima: true },
-  { id: 'callao', name: 'Callao', deliveryDays: '24 hrs', partner: 'Delivery Propio AEROBOX (GRATIS)', isFreeLima: true },
+  { id: 'lima', name: 'Lima Metropolitana', deliveryDays: '24 hrs', partner: 'Delivery Propio Future Courier (GRATIS)', isFreeLima: true },
+  { id: 'callao', name: 'Callao', deliveryDays: '24 hrs', partner: 'Delivery Propio Future Courier (GRATIS)', isFreeLima: true },
   { id: 'arequipa', name: 'Arequipa', deliveryDays: '48 - 72 hrs', partner: 'Shalom Express / Olva', isFreeLima: false },
   { id: 'trujillo', name: 'La Libertad (Trujillo)', deliveryDays: '48 - 72 hrs', partner: 'Shalom / Marvisur', isFreeLima: false },
   { id: 'cusco', name: 'Cusco', deliveryDays: '48 - 72 hrs', partner: 'Shalom Cargo / Olva', isFreeLima: false },
@@ -64,7 +64,7 @@ export const FAQS: FAQItem[] = [
 
   // ASESORÍA Y GUÍA DE COMPRA (6)
   { id: 'f13', category: 'buyforme', question: '¿En qué consiste el servicio de "Asesoría y Guía de Compra"?', answer: 'Te guiamos paso a paso por WhatsApp o llamada para realizar tu compra directamente desde tu cuenta o tarjeta en tiendas como Amazon, Apple o Nike USA, enseñándote a colocar correctamente la dirección de tu casillero en Miami.' },
-  { id: 'f14', category: 'buyforme', question: '¿Cuánto cuesta la Asesoría de Compra?', answer: '¡Es 100% GRATUITA! AEROBOX PRO no cobra ninguna comisión por ayudarte a realizar tu compra. Tú realizas el pago directamente a la tienda oficial de EE.UU.' },
+  { id: 'f14', category: 'buyforme', question: '¿Cuánto cuesta la Asesoría de Compra?', answer: '¡Es 100% GRATUITA! Future Courier no cobra ninguna comisión por ayudarte a realizar tu compra. Tú realizas el pago directamente a la tienda oficial de EE.UU.' },
   { id: 'f15', category: 'buyforme', question: '¿Cómo solicito asesoría para mi primera compra?', answer: 'Solo ingresas al botón "Solicitar Asesoría" o nos envías el enlace del producto deseado vía WhatsApp. Un asesor te indicará exactamente cómo ingresar los datos de envío y facturación.' },
   { id: 'f16', category: 'buyforme', question: '¿Me orientan durante eventos como Amazon Prime Day o Black Friday?', answer: '¡Absolutamente! Nuestro equipo te indica qué ofertas valen la pena, cómo aplicar cupones de descuento y cómo asegurar el stock antes de que se agoten las promociones.' },
   { id: 'f17', category: 'buyforme', question: '¿Me ayudan si una tienda rechaza mi tarjeta o dirección?', answer: 'Sí, te brindamos alternativas seguras e instrucciones exactas para configurar tu tarjeta o métodos como PayPal para que la tienda procese tu pedido sin problemas.' },
@@ -79,12 +79,12 @@ export const FAQS: FAQItem[] = [
   { id: 'f24', category: 'customs', question: '¿Se pueden importar iPhones o laptops reacondicionadas (Refurbished)?', answer: '¡Sí! Puedes importar laps, iPads y iPhones reacondicionados (A-Grade) de tiendas autorizadas como Apple Refurbished, Amazon Renewed o eBay Certified.' },
 
   // GARANTÍA Y SEGURIDAD (6)
-  { id: 'f25', category: 'guarantee', question: '¿Mis paquetes cuentan con seguro durante el trayecto?', answer: 'Todos nuestros envíos incluyen un seguro de carga base que cubre pérdida o extravío. Además, puedes optar por nuestro Seguro Premium AEROBOX (1.5% del valor) para protección contra todo riesgo.' },
+  { id: 'f25', category: 'guarantee', question: '¿Mis paquetes cuentan con seguro durante el trayecto?', answer: 'Todos nuestros envíos incluyen un seguro de carga base que cubre pérdida o extravío. Además, puedes optar por nuestro Seguro Premium Future Courier (1.5% del valor) para protección contra todo riesgo.' },
   { id: 'f26', category: 'guarantee', question: '¿Tienen oficina física donde pueda retirar mis paquetes o hacer consultas?', answer: 'Sí, nuestra oficina administrativa y centro de distribución principal en Perú está ubicada en Av. Javier Prado Este 2450, San Isidro, Lima. También puedes recibir por delivery.' },
   { id: 'f27', category: 'guarantee', question: '¿Dónde está ubicado el almacén en Estados Unidos?', answer: 'Nuestro warehouse propio está ubicado en Miami, Florida (8300 NW 30th Terrace, Doral, FL 33122), un área libre de impuestos sobre ventas locales (Sales Tax Exemption disponible).' },
-  { id: 'f28', category: 'guarantee', question: '¿Cómo puedo rastrear mi envío en tiempo real?', answer: 'Con tu código de rastreo (ej. AB-9042-PE) puedes ingresar a nuestra sección de Tracking en la web o consultar por WhatsApp para ver la ubicación GPS y estado aduanero 24/7.' },
+  { id: 'f28', category: 'guarantee', question: '¿Cómo puedo rastrear mi envío en tiempo real?', answer: 'Con tu código de rastreo (ej. FC-9042-PE) puedes ingresar a nuestra sección de Tracking en la web o consultar por WhatsApp para ver la ubicación GPS y estado aduanero 24/7.' },
   { id: 'f29', category: 'guarantee', question: '¿Qué pasa si mi paquete sufre daños durante el envío aéreo?', answer: 'Nuestro empaque de alta seguridad e inspección previa reduce el riesgo a casi 0%. Si ocurre una incidencia imputable al transporte, reembolsamos el valor declarado cubierto por el seguro.' },
-  { id: 'f30', category: 'guarantee', question: '¿Ofrecen servicio para empresas que importan en volumen (Carga Comercial)?', answer: 'Sí, contamos con la división AEROBOX B2B para importadores comerciales, pequeñas empresas y e-commerce con tarifas preferenciales por volumen desde 50 kg en adelante.' }
+  { id: 'f30', category: 'guarantee', question: '¿Ofrecen servicio para empresas que importan en volumen (Carga Comercial)?', answer: 'Sí, contamos con la división Future Courier B2B para importadores comerciales, pequeñas empresas y e-commerce con tarifas preferenciales por volumen desde 50 kg en adelante.' }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -96,7 +96,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     date: 'Hace 3 días',
     store: 'Apple Store USA',
-    comment: 'Compré el nuevo MacBook Pro M3 en Apple USA. En tiendas locales me pedían S/ 9,500. Con AEROBOX PRO pagué $8/kg sin sorpresas y me llegó a mi casa en Surco en solo 3 días hábiles. ¡Experiencia de 10 estrellas!',
+    comment: 'Compré el nuevo MacBook Pro M3 en Apple USA. En tiendas locales me pedían S/ 9,500. Con Future Courier pagué $8/kg sin sorpresas y me llegó a mi casa en Surco en solo 3 días hábiles. ¡Experiencia de 10 estrellas!',
     savedAmount: 'Ahorro: S/ 2,400',
     verified: true
   },
@@ -120,7 +120,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     date: 'Hace 1 semana',
     store: 'Nike USA & eBay',
-    comment: 'Tenía dudas sobre cómo ingresar la dirección de Miami en Nike USA. El equipo de AEROBOX me asesoró paso a paso por WhatsApp de forma gratuita. Compré mis zapatillas y llegaron a Trujillo súper rápido.',
+    comment: 'Tenía dudas sobre cómo ingresar la dirección de Miami en Nike USA. El equipo de Future Courier me asesoró paso a paso por WhatsApp de forma gratuita. Compré mis zapatillas y llegaron a Trujillo súper rápido.',
     savedAmount: 'Ahorro: S/ 450',
     verified: true
   },
@@ -175,8 +175,8 @@ export const BLOG_POSTS: BlogPost[] = [
 ];
 
 export const MOCK_TRACKING_DATABASE: Record<string, TrackingRecord> = {
-  'AB-9042-PE': {
-    code: 'AB-9042-PE',
+  'FC-9042-PE': {
+    code: 'FC-9042-PE',
     clientName: 'Miguel Ángel R.',
     destinationCity: 'Lima (Santiago de Surco)',
     weightKg: 3.4,
@@ -188,13 +188,13 @@ export const MOCK_TRACKING_DATABASE: Record<string, TrackingRecord> = {
       { title: 'Inspección & Consolidación Completada', date: '20 Jul - 02:40 PM', location: 'Warehouse Miami #4', completed: true },
       { title: 'Vuelo Internacional MCO → LIM Despegó', date: '21 Jul - 11:30 PM', location: 'Vuelo Cargo AA-802', completed: true },
       { title: 'Arribo a Lima & Despacho Aduanero SUNAT', date: '22 Jul - 08:20 AM', location: 'Aeropuerto Jorge Chávez', completed: true },
-      { title: 'En Centro de Distribución San Isidro', date: '22 Jul - 04:10 PM', location: 'Hub Central AEROBOX', completed: true },
+      { title: 'En Centro de Distribución San Isidro', date: '22 Jul - 04:10 PM', location: 'Hub Central Future Courier', completed: true },
       { title: 'En Ruta de Reparto con Courier Local', date: '23 Jul - 08:30 AM', location: 'Unidad de Reparto #12', completed: true, active: true },
       { title: 'Entregado en Puerta del Cliente', date: 'Pendiente', location: 'Dirección Final', completed: false }
     ]
   },
-  'AB-5510-PE': {
-    code: 'AB-5510-PE',
+  'FC-5510-PE': {
+    code: 'FC-5510-PE',
     clientName: 'Dra. Sofía Alva',
     destinationCity: 'Arequipa (Cayma)',
     weightKg: 1.8,
@@ -210,8 +210,8 @@ export const MOCK_TRACKING_DATABASE: Record<string, TrackingRecord> = {
       { title: 'Entregado en Agencia / Domicilio', date: 'Pendiente', location: 'Arequipa', completed: false }
     ]
   },
-  'AB-3312-PE': {
-    code: 'AB-3312-PE',
+  'FC-3312-PE': {
+    code: 'FC-3312-PE',
     clientName: 'Jorge L. Torres',
     destinationCity: 'Trujillo',
     weightKg: 5.2,

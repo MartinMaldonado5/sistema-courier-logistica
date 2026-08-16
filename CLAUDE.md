@@ -1,4 +1,4 @@
-# Project Instructions (Aerobox Pro)
+# Project Instructions (Future Courier)
 
 Este archivo sirve para guiar al agente de Inteligencia Artificial (antigravity/Gemini) en las tareas comunes de desarrollo y estilo dentro del repositorio.
 

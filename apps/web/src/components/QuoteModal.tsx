@@ -20,7 +20,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const msg = `Hola AEROBOX PRO 👋, me llamo ${name}. Quisiera cotizar un envío:\n` +
+    const msg = `Hola Future Courier 👋, me llamo ${name}. Quisiera cotizar un envío:\n` +
       `📦 Producto: ${productDesc}\n` +
       `⚖️ Peso aproximado: ${weightKg} kg\n` +
       `📍 Ciudad de entrega: ${city}\n` +

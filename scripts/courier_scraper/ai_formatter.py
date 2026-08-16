@@ -95,9 +95,9 @@ class AIFormatter:
 
 ## 💡 Guía de Prompts Sugeridos para la IA (Cómo Usar esta Carpeta)
 
-Cuando desees consultar esta carpeta general para mejorar el proyecto **Aerobox Pro**, puedes indicarle a la IA:
+Cuando desees consultar esta carpeta general para mejorar el proyecto **Future Courier**, puedes indicarle a la IA:
 
-1. **"Analiza la paleta de colores y componentes visuales de la carpeta de couriers y propón una mejora de UI/UX para la página principal de Aerobox Pro."**
+1. **"Analiza la paleta de colores y componentes visuales de la carpeta de couriers y propón una mejora de UI/UX para la página principal de Future Courier."**
 2. **"Revisa los endpoints y librerías de JS detectados en los 10 couriers para diseñar un cotizador interactivo más rápido y moderno."**
 3. **"Compara los servicios de casillero virtual y encomiendas de Olva, Shalom y Aeropost para identificar funcionalidades que nos falten implementar."**
 

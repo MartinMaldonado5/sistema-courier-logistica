@@ -15,7 +15,7 @@ export const OfficialWhatsAppIcon: React.FC<{ className?: string }> = ({ classNa
 export const FloatingWhatsAppButton: React.FC = () => {
   const [showTooltip, setShowTooltip] = useState(true);
   const phone = '51987654321';
-  const defaultMsg = 'Hola AEROBOX PRO 👋, quisiera recibir asesoría personalizada para realizar un envío o crear mi casillero en Miami.';
+  const defaultMsg = 'Hola Future Courier 👋, quisiera recibir asesoría personalizada para realizar un envío o crear mi casillero en Miami.';
   const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(defaultMsg)}`;
 
   return (

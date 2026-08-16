@@ -47,7 +47,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </div>
               <div>
                 <span className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight flex items-center gap-1">
-                  AEROBOX <span className="text-blue-600 font-extrabold">PRO</span>
+                  FUTURE <span className="text-blue-600 font-extrabold">COURIER</span>
                 </span>
                 <span className="block text-[9px] sm:text-[9.5px] font-bold text-slate-500 tracking-widest uppercase">
                   Logística EE.UU. → Perú
@@ -113,7 +113,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
               {/* WhatsApp Quick Button */}
               <a
-                href="https://wa.me/51987654321?text=Hola%20AEROBOX%20PRO,%20quiero%20cotizar%20un%20env%C3%ADo."
+                href="https://wa.me/51987654321?text=Hola%20Future%20Courier,%20quiero%20cotizar%20un%20env%C3%ADo."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 bg-[#25D366]/10 border border-[#25D366]/30 hover:bg-[#25D366] text-[#25D366] hover:text-white rounded-xl transition-all shadow-sm hover:scale-105 active:scale-95"
@@ -228,7 +228,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </button>
 
                 <a
-                  href="https://wa.me/51987654321?text=Hola%20AEROBOX%20PRO,%20quisiera%20asesor%C3%ADa%20para%20un%20env%C3%ADo."
+                  href="https://wa.me/51987654321?text=Hola%20Future%20Courier,%20quisiera%20asesor%C3%ADa%20para%20un%20env%C3%ADo."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs rounded-xl flex items-center justify-center gap-2 shadow-md shadow-emerald-900/10"

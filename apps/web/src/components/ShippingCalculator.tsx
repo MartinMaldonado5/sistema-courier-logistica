@@ -47,7 +47,7 @@ export const ShippingCalculator: React.FC = () => {
       origin: { y: 0.6 }
     });
 
-    const msg = `Hola AEROBOX PRO 👋, quiero solicitar una cotización con los siguientes datos:\n` +
+    const msg = `Hola Future Courier 👋, quiero solicitar una cotización con los siguientes datos:\n` +
       `📦 Peso: ${weightKg} ${weightUnit.toUpperCase()} (${roundedWeightKg.toFixed(1)} kg)\n` +
       `📍 Destino: ${deptInfo.name}\n` +
       `🏷️ Categoría: ${category.toUpperCase()}\n` +

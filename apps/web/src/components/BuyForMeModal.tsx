@@ -18,7 +18,7 @@ export const BuyForMeModal: React.FC<BuyForMeModalProps> = ({ isOpen, onClose })
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const msg = `Hola AEROBOX PRO 👋, quisiera solicitar Asesoría Gratuita para realizar mi compra en EE.UU.:\n` +
+    const msg = `Hola Future Courier 👋, quisiera solicitar Asesoría Gratuita para realizar mi compra en EE.UU.:\n` +
       `🔗 Enlace del producto: ${productUrl}\n` +
       `🏪 Tienda: ${storeName}\n` +
       `📝 Consulta / Duda: ${clientNotes}`;
@@ -58,7 +58,7 @@ export const BuyForMeModal: React.FC<BuyForMeModalProps> = ({ isOpen, onClose })
         <div className="p-4 bg-blue-50 rounded-2xl border border-blue-200 text-xs text-blue-950 space-y-1.5">
           <div className="flex items-center gap-2 font-extrabold text-blue-900">
             <ShieldCheck className="w-4 h-4 text-blue-600 shrink-0" />
-            <span>Modelo de Servicio AEROBOX PRO</span>
+            <span>Modelo de Servicio Future Courier</span>
           </div>
           <p className="leading-relaxed font-medium">
             Tú realizas la compra directamente en tu tienda favorita de EE.UU. usando la dirección de nuestro almacén en Miami. <strong>No realizamos compras a nombre del cliente ni cobramos comisiones de compra</strong>: te guiamos y asesoramos totalmente <strong>GRATIS</strong> para ingresar la dirección, seleccionar el mejor tipo de envío y resolver cualquier duda durante la compra.

@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 export const AIAssistantWidget: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<{ role: 'user' | 'assistant'; text: string }[]>([
-    { role: 'assistant', text: '¡Hola! Soy AERO-AI 🤖, tu asistente de logística internacional. ¿Tienes dudas sobre tarifas ($8/kg), aduanas SUNAT o productos restringidos?' }
+    { role: 'assistant', text: '¡Hola! Soy FUTURE-AI 🤖, tu asistente de logística internacional de Future Courier. ¿Tienes dudas sobre tarifas ($8/kg), aduanas SUNAT o productos restringidos?' }
   ]);
   const [inputMsg, setInputMsg] = useState('');
 
@@ -31,7 +31,7 @@ export const AIAssistantWidget: React.FC = () => {
       } else if (textLower.includes('prohibid') || textLower.includes('restringid') || textLower.includes('perfume') || textLower.includes('arma')) {
         botResponse = '🚫 Están prohibidos: armas, municiones, drogas, perecibles y dinero. Suplementos y celulares requieren permiso (el permiso MTC para celulares lo tramitamos GRATIS).';
       } else if (textLower.includes('miami') || textLower.includes('direccion') || textLower.includes('casillero')) {
-        botResponse = ' Tu dirección de Casillero en Miami es: 8300 NW 30th Terrace, Ste 400, (Tu Código AB-XXXX), Doral, FL 33122.';
+        botResponse = '📍 Tu dirección de Casillero en Miami es: 8300 NW 30th Terrace, Ste 400, (Tu Código FC-XXXX), Doral, FL 33122.';
       } else if (textLower.includes('comprar') || textLower.includes('tarjeta') || textLower.includes('rechaz') || textLower.includes('asesor')) {
         botResponse = '🤝 Te brindamos Asesoría y Guía de Compra 1 a 1 totalmente GRATIS por WhatsApp para enseñarte a comprar en tiendas de EE.UU., colocar tu casillero y resolver dudas.';
       }
@@ -66,7 +66,7 @@ export const AIAssistantWidget: React.FC = () => {
                   <Sparkles className="w-4 h-4" />
                 </div>
                 <div>
-                  <h3 className="text-xs font-bold text-gray-900">AERO-AI Assistant</h3>
+                  <h3 className="text-xs font-bold text-gray-900">FUTURE-AI Assistant</h3>
                   <span className="text-[10px] text-emerald-700 font-semibold flex items-center gap-1">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
                     En línea 24/7

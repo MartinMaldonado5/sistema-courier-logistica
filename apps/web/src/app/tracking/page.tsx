@@ -9,8 +9,8 @@ import { Navbar } from '../../components/Navbar';
 import { Footer } from '../../components/Footer';
 
 export default function TrackingPage() {
-  const [searchCode, setSearchCode] = useState<string>('AB-9042-PE');
-  const [activeRecord, setActiveRecord] = useState<TrackingRecord | null>(MOCK_TRACKING_DATABASE['AB-9042-PE']);
+  const [searchCode, setSearchCode] = useState<string>('FC-9042-PE');
+  const [activeRecord, setActiveRecord] = useState<TrackingRecord | null>(MOCK_TRACKING_DATABASE['FC-9042-PE']);
   const [notFound, setNotFound] = useState<boolean>(false);
 
   const handleSearch = (e: React.FormEvent) => {
@@ -60,9 +60,9 @@ export default function TrackingPage() {
             </h1>
             <p className="text-sm sm:text-base text-slate-600 font-medium">
               Ingresa tu código de seguimiento o prueba con: {' '}
-              <button onClick={() => setSearchCode('AB-9042-PE')} className="text-blue-600 font-bold underline hover:text-blue-800">AB-9042-PE</button>, {' '}
-              <button onClick={() => setSearchCode('AB-5510-PE')} className="text-blue-600 font-bold underline hover:text-blue-800">AB-5510-PE</button> o {' '}
-              <button onClick={() => setSearchCode('AB-3312-PE')} className="text-blue-600 font-bold underline hover:text-blue-800">AB-3312-PE</button>.
+              <button onClick={() => setSearchCode('FC-9042-PE')} className="text-blue-600 font-bold underline hover:text-blue-800">FC-9042-PE</button>, {' '}
+              <button onClick={() => setSearchCode('FC-5510-PE')} className="text-blue-600 font-bold underline hover:text-blue-800">FC-5510-PE</button> o {' '}
+              <button onClick={() => setSearchCode('FC-3312-PE')} className="text-blue-600 font-bold underline hover:text-blue-800">FC-3312-PE</button>.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ export default function TrackingPage() {
               <Package className="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
-                placeholder="Código de Rastreo (ej. AB-9042-PE)..."
+                placeholder="Código de Rastreo (ej. FC-9042-PE)..."
                 value={searchCode}
                 onChange={(e) => setSearchCode(e.target.value)}
                 className="w-full bg-white border border-slate-300 rounded-2xl pl-12 pr-4 py-4 text-sm font-bold text-slate-900 focus:outline-none focus:border-blue-600 shadow-sm uppercase font-mono"
@@ -144,7 +144,7 @@ export default function TrackingPage() {
               <AlertCircle className="w-10 h-10 text-rose-500 mx-auto" />
               <h3 className="text-lg font-bold text-slate-900">Código no encontrado</h3>
               <p className="text-xs text-slate-500 max-w-sm mx-auto font-medium">
-                Verifica que el código ingresado sea correcto (ejemplo: AB-9042-PE).
+                Verifica que el código ingresado sea correcto (ejemplo: FC-9042-PE).
               </p>
             </div>
           )}
